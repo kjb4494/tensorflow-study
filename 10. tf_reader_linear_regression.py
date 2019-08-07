@@ -2,6 +2,8 @@ import tensorflow as tf
 import os
 
 
+# tensorflow reader로 파일을 읽어서 메모리 낭비를 줄임
+
 def lab_04_4():
     filename_queue = tf.train.string_input_producer(
         ['data-01-test-score.csv'], shuffle=False, name='filename_queue'

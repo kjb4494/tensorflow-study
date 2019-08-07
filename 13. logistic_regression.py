@@ -29,7 +29,7 @@ def lab_05_1():
         # Initialize TensorFlow variables
         sess.run(tf.compat.v1.global_variables_initializer())
 
-        for step in range(10001):
+        for step in range(2001):
             cost_val, _ = sess.run([cost, train], feed_dict={X: x_data, Y: y_data})
             if step % 200 == 0:
                 print(step, cost_val)

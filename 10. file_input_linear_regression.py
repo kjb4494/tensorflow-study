@@ -3,6 +3,8 @@ import numpy as np
 import os
 
 
+# numpy를 이용함 --> 메모리 리소스 소모가 큼
+
 def lab_04_3():
     xy = np.loadtxt('data-01-test-score.csv', delimiter=',', dtype=np.float32)
     x_data = xy[:, 0:-1]

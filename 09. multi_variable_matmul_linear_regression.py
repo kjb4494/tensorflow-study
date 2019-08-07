@@ -30,7 +30,7 @@ def lab_04_2():
 
     sess.run(tf.compat.v1.global_variables_initializer())
 
-    for step in range(2001):
+    for step in range(10001):
         cost_val, hy_val, W_val, b_val, _ = sess.run(
             [cost, hypothesis, W, b, train], feed_dict={X: x_data, Y: y_data}
         )
@@ -44,3 +44,6 @@ if __name__ == '__main__':
     sess = tf.compat.v1.Session()
 
     lab_04_2()
+
+
+# 입력받는 데이터가 많아질 경우 --> file_input_linear_regression

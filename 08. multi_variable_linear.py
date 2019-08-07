@@ -44,3 +44,7 @@ if __name__ == '__main__':
     sess = tf.compat.v1.Session()
 
     lab_04_1()
+
+
+# 좋지않은 방식이다. 복잡성 때문에 스파게티 코드가 될 가능성이 있음
+# --> multi_variable_matmul_linear_regression 처럼 행렬을 사용하여 구현하자.
